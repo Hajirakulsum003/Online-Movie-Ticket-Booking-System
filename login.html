@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Login and Registration Form |</title>
+    <!-- Google Fonts Link For Icons -->
+   
+    <link rel="stylesheet" href="login.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="Index1.html">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form id="loginForm" action="userloginBE" method="post">
+                    <div class="input-field" >
+                        <input type="text"  placeholder="Email" />
+                        
+                    </div>
+                    <div class="input-field">
+                        <input type="password"  placeholder="Password" />
+                        
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button> <a href="Seatbooking.html">Log In</a></button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please signup.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form method="post" action="UsersignupBE">
+                     <div class="input-field">
+                          
+                        <input type="text" placeholder name="cname" required>
+                        <label>Enter the Name</label>
+                     </div>
+                     <div class="input-field">
+                        <input type="text" name="phone">
+                        <label>Enter the phone Number</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="emailid">
+                      <label>Enter the Email Id</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password"  name="pwd">
+                       <label>Enter the password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" name="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit" value="Sign Up">SIGN UP.</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

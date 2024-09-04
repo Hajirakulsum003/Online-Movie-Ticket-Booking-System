@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Delete Movie</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            margin: 20px;
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            font-size: 34px;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #630363;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div>Delete Movie Details</div>
+    <hr>
+  <form action="DeletemovieBE" method="post">
+    <label for="movieID">Enter the movie ID:</label>
+    <input type="text" id="movieID" name="mid" required><br>
+    
+    <label for="movieName">Enter the movie name:</label>
+    <input type="text" id="movieName" name="mname" required><br>
+    
+    <input type="submit" value="Delete">
+    <button><a href="Dashboard.html">Back to Dashboard</a></button>
+</form>
+
+</body>
+</html>

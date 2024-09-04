@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To update the record
+-->
+<html lang="en">
+<head>
+    <title>Update</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        form {
+            margin: 20px;
+            max-width: 400px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            font-size: 34px;
+            font-weight: bold;
+            color: white;
+            margin-top: 20px;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #630363;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div>Update the Movie Details</div>
+    <hr>
+    <form method="post" action="UpdatemovieBE">
+        Enter the Movie name: <input type="text" name="mname"> <br>
+        <br>
+        Enter Show Timings:
+        <select name="show_timings">
+            <option value="09:00">09:00 </option>
+            <option value="12:00">12:00 </option>
+            <option value="15:00">15:00 </option>
+            <option value="18:00">18:00 </option>
+            
+        </select> <br>
+        Enter Ticket Price: <input type="text" name="ticket_price"> <br>
+        Choose Date: <input type="date" name="show_date"> <br>
+        <br> <input type="submit" value="Update Movie">
+        <button><a href="Dashboard.html">Back to Dashboard</a></button>
+    </form>
+</body>
+</html>
